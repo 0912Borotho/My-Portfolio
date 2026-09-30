@@ -21,9 +21,5 @@
 /* Stats strip */
 .stats{background:var(--lime);color:var(--navy)}
 .stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:22px 0}
-/*.stats b{display:block;font:700 30px Fraunces,Georgia,serif}*/
-.stats b{
-  display: block;
-  font: 700 24px Fraunces, Georgia, serif; /* Reduced from 30px to 24px */
-}
+.stats b{display:block;font:700 30px Fraunces,Georgia,serif}
 .stats span{font-size:13px;font-weight:500}
