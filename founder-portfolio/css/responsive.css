@@ -1,0 +1,20 @@
+/* Reduced motion and responsive breakpoints */
+@media(prefers-reduced-motion:reduce){
+*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto}
+.reveal{opacity:1;transform:none}.art i{transform:none}
+}
+@media(max-width:860px){
+.links{display:none;position:absolute;top:76px;left:0;right:0;background:#fff;padding:18px 24px;flex-direction:column;border-bottom:1px solid var(--line);box-shadow:0 12px 20px rgba(0,0,0,.06)}
+.links.open{display:flex}
+.menu{display:block}
+.nav .btn{display:none}
+.hg,.two,.journey,.band{grid-template-columns:1fr}
+.portrait{order:-1;width:min(260px,70%)}
+.cards{grid-template-columns:repeat(2,1fr)}
+.stats .wrap{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:560px){
+.sec{padding:60px 0}.hero{padding:60px 0}
+.cards,.projects,.steps{grid-template-columns:1fr}
+.band{padding:28px}
+}
