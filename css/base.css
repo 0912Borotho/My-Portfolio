@@ -1,0 +1,21 @@
+/* Base: tokens, reset, layout wrapper, progress bar, buttons, scroll reveal */
+:root{--navy:#0f2233;--navy2:#16324a;--teal:#1f7a8c;--mist:#eaf1f5;--white:#fff;--ink:#14202b;--muted:#587080;--line:#d5e1e8;--lime:#b8e36b;--g:#267a4b}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--mist);color:var(--ink);font:16px/1.7 "DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.12;margin:0}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
+.wrap{width:min(1120px,calc(100% - 36px));margin:auto}
+#progress{position:fixed;top:0;left:0;height:3px;width:100%;background:linear-gradient(90deg,var(--teal),var(--lime));transform:scaleX(0);transform-origin:left;z-index:100}
+
+.btn{display:inline-block;background:var(--teal);color:#fff;border:1px solid var(--teal);border-radius:8px;padding:12px 20px;font:700 14px "DM Sans",sans-serif;cursor:pointer;transition:transform .25s,box-shadow .25s,background .25s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(31,122,140,.3);background:#186a7a}
+.btn.lime{background:var(--lime);border-color:var(--lime);color:var(--navy)}
+.btn.lime:hover{background:#c9ec85;box-shadow:0 10px 24px rgba(184,227,107,.3)}
+.btn.ghost{background:transparent;border-color:#ffffff66;color:#fff}
+.btn.ghost:hover{background:#ffffff1a;border-color:#fff;box-shadow:none}
+
+/* Section reveal */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.165,.84,.44,1),transform .7s cubic-bezier(.165,.84,.44,1);transition-delay:calc(var(--d,0)*.08s)}
+.reveal.visible{opacity:1;transform:none}
